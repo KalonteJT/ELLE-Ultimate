@@ -24,7 +24,7 @@ class Chart extends Component{
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text:'Bar Representation of Your Game Sessions of '+this.props.location,
               fontSize:25
             },
             legend:{
@@ -32,14 +32,14 @@ class Chart extends Component{
               position:this.props.legendPosition
             }
           }}
-        />
+        /> 
 
         <Line
           data={this.state.chartData}
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text:'Your Progress Over Time in '+this.props.location,
               fontSize:25
             },
             legend:{
@@ -54,7 +54,7 @@ class Chart extends Component{
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text:'Time Allocated to Each Game Mode of '+this.props.location,
               fontSize:25
             },
             legend:{

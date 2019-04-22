@@ -75,15 +75,18 @@ class AddCard extends React.Component {
 							console.log(res.data);
 						}).catch(function (error) {
 							console.log(error);
+							console.log(error.message);
 						});
 						axios.post(this.props.serviceIP + '/card/sound/'+res.data.cardID, formAudioData, {headers:fileheader})
 						.then(res => {
 							console.log(res.data);
 						}).catch(function (error) {
 							console.log(error);
+							console.log(error.message);
 						});
 	      }).catch(function (error) {
 	        console.log(error);
+					console.log(error.message);
 	      });
 		} else {
 			console.log("Please fill all inputs!");

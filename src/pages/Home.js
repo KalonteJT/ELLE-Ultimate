@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MainTemplate from '../pages/MainTemplate';
 
 import '../stylesheets/style.css';
 import '../lib/bootstrap/css/bootstrap.min.css';
@@ -10,24 +11,7 @@ import '../lib/ionicons/css/ionicons.min.css';
 const Home = (props) => {
   return (
 	<div>
-		<header id="header">
-			<div className="container">
-				<div id="logo" className="pull-left">
-					<Link to='/'><img src={require('../Images/ELLE/ELLE-Background-Full.png')} alt="ELLE Ultimate"
-					title="Home" className="mainLogoStyle"/></Link>
-				</div>
-
-				<nav id="nav-menu-container">
-					<ul className="nav-menu">
-						<li><Link to='/downloads'>Download</Link></li>
-						<li><Link to='/login'>Log In</Link></li>
-						<li><Link to='/signup'>Sign Up</Link></li>
-						<li><a href="https://www.github.com/ItsNotRick/elle" className="github"><i className="fa fa-github fa-lg"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
+		<MainTemplate/>
 
 		<section id="intro">
 			<div className="intro-content">
@@ -213,15 +197,26 @@ const Home = (props) => {
 			<div className="row" style={{textAlign: 'center'}}>
 				<div className="col-lg-4">
 					<h4>Dr. Emily Johnson</h4>
-					<p>Postdoctoral Research Associate</p>
+					<p>Visiting Assistant Professor, Games and Interactive Media</p>
 				</div>
 				<div className="col-lg-4">
 					<h4>Dr. Amy Giroux</h4>
-					<p>Computer Research Specialist, Center of Humanities and Digital Research</p>
+					<p>Associate Director, Center of Humanities and Digital Research</p>
 				</div>
 				<div className="col-lg-4">
 					<h4>Dr. Don Merritt</h4>
 					<p>Director, Office of Instructional Resources</p>
+				</div>
+			</div>
+				<br></br>
+			<div className="row" style={{textAlign: 'center'}}>
+				<div className="col">
+					<h4>Dr. Sandra Sousa</h4>
+					<p>Assistant Professor of Portuguese</p>
+				</div>
+				<div className="col">
+					<h4>Dr. Gregara Vitanova</h4>
+					<p>Associate Professor, Modern Languages and Literatures</p>
 				</div>
 			</div>
 		</div>

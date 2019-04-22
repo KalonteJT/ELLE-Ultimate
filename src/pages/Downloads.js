@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import MainTemplate from '../pages/MainTemplate';
 
 import '../stylesheets/style.css';
 import '../lib/bootstrap/css/bootstrap.min.css';
@@ -13,24 +13,8 @@ export default class Downloads extends Component {
 	render() {
 	return (
 	<div>
-		<header id="header">
-			<div className="container">
-				<div id="logo" className="pull-left">
-					<Link to='/'><img src={require('../Images/ELLE/ELLE-Background-Full.png')} alt="ELLE Ultimate"
-					title="Home" className="mainLogoStyle"/></Link>
-				</div>
-
-				<nav id="nav-menu-container">
-					<ul className="nav-menu">
-						<li><Link to='/downloads'>Download</Link></li>
-						<li><Link to='/login'>Log In</Link></li>
-						<li><Link to='/signup'>Sign Up</Link></li>
-						<li><a href="https://www.github.com/ItsNotRick/elle" className="github"><i className="fa fa-github fa-lg"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-   
+		<MainTemplate/>
+		
 		<section id="intro">
 			<div className="intro-content">
 				<h2>Downloads</h2>
@@ -60,10 +44,10 @@ export default class Downloads extends Component {
 						<li>Josh Sewnath</li>
 						<li>Patrick Thompson</li>
 				  </ul>
-				  <a className="cta-btn align-middle" href="https://www.google.com/">Download</a>
+				  <a className="cta-btn align-middle" href="https://github.com/ysewnath/csproj2_github/releases/download/v1.0.4/csproj2_build2.zip">Download</a>
 				</div>
 				<div className="col-lg-6 about-img">
-				  <img src={require('../Images/ELLE/mobile3D.jpg')} alt="" style={{maxWidth: '100%'}} />
+				  <img src={require('../Images/ELLE/project_elle.png')} alt="" style={{maxWidth: '100%'}} />
 				</div>
 			</div>
 		</div>
@@ -88,7 +72,7 @@ export default class Downloads extends Component {
 						<li>Mustapha Moore</li>
 						<li>Dominic Rama</li>
 				  </ul>
-				  <a className="cta-btn align-middle btn-right" href="https://www.google.com/">Download</a>
+				  <a className="cta-btn align-middle btn-right" href="https://github.com/ItsNotRick/elle-mobile-game">Download</a>
 				</div>
 			</div>
 		</div>
@@ -108,7 +92,7 @@ export default class Downloads extends Component {
 						<li>Ian Holdeman</li>
 						<li>Santiago Perez Arrubla</li>
 				  </ul>
-				  <a className="cta-btn align-middle" href="https://www.google.com/">Download</a>
+				  <a className="cta-btn align-middle" href="https://github.com/ItsNotRick/elle-endlessrunner-vr/releases/download/v0.0.1/WindowsNoEditor.zip">Download</a>
 				</div>
 				<div className="col-lg-6">
 				  <img src={require('../Images/ELLE/PC.jpg')} alt="" style={{maxWidth: '100%'}} />
@@ -125,9 +109,8 @@ export default class Downloads extends Component {
 				</div>
 				<div className="col-lg-6 text-center text-lg-right">
 				  <h3 className="cta-title">ELLE 1.0</h3>
-				  <p className="cta-text"> The original. Play the virtual reality version
-							on the game's very first build. NOTE: This game is NOT compatible with
-							the ELLE database.</p>
+				  <p className="cta-text"> The original. This version of the game is deprecated.
+					Please refer to ELLE 2.0</p>
 				  <p className="cta-text">Senior Design Team:</p>
 				  <ul style={{color: '#ffffff', textAlign: 'right', listStylePosition: 'inside'}}>
 						<li>Georg Anemogiannis</li>
@@ -136,7 +119,7 @@ export default class Downloads extends Component {
 						<li>Megan Chipman</li>
 						<li>Christopher Ward (Art)</li>
 				  </ul>
-				  <a className="cta-btn align-middle btn-right" href="https://www.google.com/">Download</a>
+				  
 				</div>
 			</div>
 		</div>

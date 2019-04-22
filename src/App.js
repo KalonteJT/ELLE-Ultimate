@@ -12,14 +12,15 @@ import Logout from './pages/Logout'
 import Signup from './pages/Signup';
 import UserList from './pages/UserList';
 import Recover from './pages/Recover';
+import Leaderboard from './pages/Leaderboard';
 import AuthUser from './components/Auth/AuthUser';
 import AuthAdmin from './components/Auth/AuthAdmin';
 import Stats from './pages/Stats';
 
-//let flaskIP = 'https://10.171.204.206';
-//flaskIP = 'https://endlesslearner.com';
+let flaskIP = 'https://10.171.204.206';
+flaskIP = 'https://endlesslearner.com';
 //flaskIP = 'http://localhost:5000';
-let flaskIP = 'http://127.0.0.1:5000';
+//let flaskIP = 'http://127.0.0.1:5000';
 
 class App extends Component {
   constructor() {
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path="/signup" render={(props)=><Signup {...props} serviceIP={flaskIP}/>}/>
             <Route path="/recover" render={(props)=><Recover {...props} serviceIP={flaskIP}/>}/>
             <Route path="/stats" render={(props)=><Stats {...props} serviceIP={flaskIP}/>}/>
+            <Route path="/leaderboard" render={(props)=><Leaderboard {...props} serviceIP={flaskIP}/>}/>
             <AuthUser>
               <Route exact path="/" component={Template} />
               <Route path="/groups" render={(props)=><Groups {...props} serviceIP={flaskIP}/>}/>

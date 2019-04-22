@@ -86,6 +86,7 @@ export default class Decks extends Component {
     axios.post(this.props.serviceIP + '/deck', data, {headers:headers})
     .then(res => {
       console.log(res.data);
+      this.props.history.push('/decks');
     }).catch(function (error) {
       console.log(error);
     });
@@ -184,7 +185,7 @@ export default class Decks extends Component {
               deck={this.state.decks.find((a) => a.id === this.state.deckID)}
               serviceIP={this.props.serviceIP}>
             </Deck>
-            <Button color="info" onClick={this.toggleNewCard}	block>Add Card</Button>
+            <Button color="primary" onClick={this.toggleNewCard}	block>Add Card</Button>
             <br></br>
              <Collapse isOpen={this.state.collapseNewCard}>
               <AddCard
