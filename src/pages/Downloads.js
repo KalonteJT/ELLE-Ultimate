@@ -60,7 +60,7 @@ export default class Downloads extends Component {
 				  <img src={require('../Images/ELLE/mobile3D.jpg')} alt="" style={{maxWidth: '100%'}} />
 				</div>
 				<div className="col-lg-6 text-center text-lg-right">
-				  <h3 className="cta-title">ELLE Mobile 3D</h3>
+				  <h3 className="cta-title">ELLE Mobile</h3>
 				  <p className="cta-text"> Take the power of second-language acquisition straight to
 							your mobile device. With an upbeat side-scroller and a new augmented reality
 							gamemode, you can learn any language on the go.</p>
@@ -72,7 +72,7 @@ export default class Downloads extends Component {
 						<li>Mustapha Moore</li>
 						<li>Dominic Rama</li>
 				  </ul>
-				  <a className="cta-btn align-middle btn-right" href="https://github.com/ItsNotRick/elle-mobile-game">Download</a>
+				  <a className="cta-btn align-middle btn-right" href="https://github.com/ItsNotRick/elle-mobile-game/releases/download/v0.0.2/ELLEMobile3D.apk">Download</a>
 				</div>
 			</div>
 		</div>

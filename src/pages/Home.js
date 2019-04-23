@@ -108,7 +108,7 @@ const Home = (props) => {
 					{/*<div className="pic"><img src={require('../Images/ELLE/team-1.jpg')} alt=""/></div>*/}
 						<div className="details">
 							<h4>Kalonte Jackson-Tate</h4>
-							<span>Front End Developer / Database / API</span>
+							<span>Full Stack Developer</span>
 							<div className="social">
 								{/*<a href><i className="fa fa-twitter" /></a>
 								<a href><i className="fa fa-facebook" /></a>
@@ -138,7 +138,7 @@ const Home = (props) => {
 						{/*<div className="pic"><img src={require('../Images/ELLE/team-3.jpg')} alt=""/></div>*/}
 						<div className="details">
 							<h4>Christopher Rodbourne</h4>
-							<span>Database, API, Mobile</span>
+							<span>Mobile / API </span>
 							<div className="social">
 							{/*<a href><i className="fa fa-twitter" /></a>
 								<a href><i className="fa fa-facebook" /></a>
